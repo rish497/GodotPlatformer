@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://bx5jigvj7ajrh"]
+
+[ext_resource type="Script" path="res://Scripts/Gobal.gd" id="1_k7kcj"]
+
+[node name="Node" type="Node"]
+script = ExtResource("1_k7kcj")

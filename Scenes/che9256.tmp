@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bu0xktfj1odk5"]
+
+[ext_resource type="Texture2D" uid="uid://chwiads3kxrv7" path="res://Assets/cheese_camembert.png" id="1_n6h6n"]
+[ext_resource type="Script" path="res://Scripts/cheese.gd" id="2_hv5mo"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_w48xc"]
+radius = 8.0
+height = 16.0
+
+[node name="Cheese" type="Area2D"]
+collision_mask = 3
+script = ExtResource("2_hv5mo")
+
+[node name="Cheese" type="Sprite2D" parent="."]
+texture = ExtResource("1_n6h6n")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CapsuleShape2D_w48xc")
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]
