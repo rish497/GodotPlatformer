@@ -9,10 +9,9 @@ func _ready() -> void:
 func _process(delta: float) -> void:
 	if Global.tick == 2:
 		sprite_2d.visible = true  # Show sprite when tick is 2
-		print("hi")
 	else:
 		sprite_2d.visible = false  # Hide sprite otherwise
-		print("n")
+
 		
 func _on_body_entered(body: PhysicsBody2D):
 	if Global.tick == 2:
