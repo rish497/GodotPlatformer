@@ -1,9 +1,10 @@
-[gd_scene load_steps=11 format=3 uid="uid://hdncgay8hem4"]
+[gd_scene load_steps=12 format=3 uid="uid://hdncgay8hem4"]
 
 [ext_resource type="Texture2D" uid="uid://cksomla33f5oo" path="res://Assets/Seasonal Tilesets/4 - Winter World/Terrain (16 x 16).png" id="1_tmrjw"]
 [ext_resource type="PackedScene" uid="uid://dbtucgepmlwmy" path="res://Scenes/killzone.tscn" id="2_2wtf1"]
 [ext_resource type="Texture2D" uid="uid://bgujo1lrslm7c" path="res://Assets/sprites/world_tileset.png" id="2_pc7f5"]
 [ext_resource type="PackedScene" uid="uid://crly0q65mystn" path="res://Scenes/PlayerJumpBoost.tscn" id="4_4tgq6"]
+[ext_resource type="PackedScene" uid="uid://bhshb7yvm1x6w" path="res://Scenes/SnowWolf.tscn" id="5_7ci1t"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ij7u8"]
 
@@ -277,8 +278,11 @@ layer_1/name = "Mid"
 layer_2/name = "Layer2"
 
 [node name="Player" parent="." instance=ExtResource("4_4tgq6")]
-position = Vector2(-3, -18)
+position = Vector2(97, -63)
 
 [node name="Camera2D2" type="Camera2D" parent="Player"]
 zoom = Vector2(3, 3)
 limit_bottom = 61
+
+[node name="SnowWolf" parent="." instance=ExtResource("5_7ci1t")]
+position = Vector2(486, -335)
