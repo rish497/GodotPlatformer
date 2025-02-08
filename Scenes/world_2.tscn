@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://dib0epyu30arm"]
+[gd_scene load_steps=18 format=3 uid="uid://dib0epyu30arm"]
 
 [ext_resource type="Texture2D" uid="uid://cneoq4hp4ygpw" path="res://Assets/kitchen16_tan.png" id="2_3vluj"]
 [ext_resource type="Texture2D" uid="uid://bjtp0enwh61y1" path="res://Assets/InteriorTilesLITE.png" id="2_iprph"]
@@ -10,6 +10,7 @@
 [ext_resource type="Texture2D" uid="uid://cbntsk3k76el8" path="res://Assets/New Piskel (1).png" id="6_iaxdf"]
 [ext_resource type="Texture2D" uid="uid://1821o1eklqdh" path="res://Assets/New Piskel (3).png" id="8_n4lak"]
 [ext_resource type="Script" path="res://Scripts/autumn_fire_world.gd" id="9_o2otk"]
+[ext_resource type="Texture2D" uid="uid://di3868s37w8dn" path="res://Assets/New Piskel (5).png" id="10_58v1d"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_n5j2o"]
 texture = ExtResource("2_3vluj")
@@ -2273,7 +2274,7 @@ script = ExtResource("9_o2otk")
 
 [node name="Sprite2D" type="Sprite2D" parent="AutumnFireWorld"]
 position = Vector2(-114, -147)
-texture = ExtResource("8_n4lak")
+texture = ExtResource("10_58v1d")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="AutumnFireWorld"]
 position = Vector2(-113, -144)
