@@ -986,6 +986,20 @@ layer_4/name = "Mid"
 layer_4/tile_data = PackedInt32Array(-2424720, 196612, 5, -2424719, 262148, 5, -2424710, 196612, 5, -2424709, 262148, 5)
 layer_5/name = "Layer7"
 
+[node name="Shop" type="Area2D" parent="."]
+position = Vector2(1187, -576)
+collision_mask = 2
+script = ExtResource("6_luibn")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Shop"]
+position = Vector2(695, -43)
+scale = Vector2(0.678476, 0.678476)
+sprite_frames = SubResource("SpriteFrames_y5nil")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shop"]
+position = Vector2(704, -20)
+shape = SubResource("CircleShape2D_f2ks4")
+
 [node name="Player" parent="." instance=ExtResource("4_4tgq6")]
 position = Vector2(115, -27)
 
@@ -1007,20 +1021,6 @@ position = Vector2(1484, -591)
 
 [node name="SnowWolf4" parent="." instance=ExtResource("5_7ci1t")]
 position = Vector2(1560, -591)
-
-[node name="Shop" type="Area2D" parent="."]
-position = Vector2(1187, -576)
-collision_mask = 2
-script = ExtResource("6_luibn")
-
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="Shop"]
-position = Vector2(695, -43)
-scale = Vector2(0.678476, 0.678476)
-sprite_frames = SubResource("SpriteFrames_y5nil")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Shop"]
-position = Vector2(704, -20)
-shape = SubResource("CircleShape2D_f2ks4")
 
 [connection signal="body_entered" from="Shop" to="Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop" to="Shop" method="_on_body_exited"]
