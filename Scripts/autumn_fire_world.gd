@@ -7,14 +7,14 @@ func _ready() -> void:
 	sprite_2d.visible = false
 
 func _process(delta: float) -> void:
-	if Global.tick >= 2:
+	if Global.tick >= 3:
 		sprite_2d.visible = true  # Show sprite when tick is 2
 	else:
 		sprite_2d.visible = false  # Hide sprite otherwise
 
 		
 func _on_body_entered(body: PhysicsBody2D):
-	if Global.tick >= 2:
+	if Global.tick >= 3:
 		print("Autumn World")
 		entered = true
-		get_tree().change_scene_to_file("res://Scenes/WinterLan.tscn")
+		get_tree().change_scene_to_file("res://Scenes/ FireAutumnWorld.tscn")
