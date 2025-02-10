@@ -17,4 +17,4 @@ func _on_body_entered(body: PhysicsBody2D):
 	if Global.tick >= 3:
 		print("Autumn World")
 		entered = true
-		get_tree().change_scene_to_file("res://Scenes/ FireAutumnWorld.tscn")
+		get_tree().change_scene_to_file("res://Scenes/_FireAutumnWorld-RishabhMittal.tscn")

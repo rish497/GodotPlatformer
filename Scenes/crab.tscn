@@ -1,0 +1,68 @@
+[gd_scene load_steps=13 format=3 uid="uid://c72uk3cv4lj78"]
+
+[ext_resource type="Script" path="res://Scripts/bug.gd" id="1_yvu3u"]
+[ext_resource type="Texture2D" uid="uid://drsoupevqnxb3" path="res://Assets/Crab Enemy Camacebra Games/Moving/CrabMoving1.png" id="2_r38ff"]
+[ext_resource type="PackedScene" uid="uid://dbtucgepmlwmy" path="res://Scenes/killzone.tscn" id="3_a0w7v"]
+[ext_resource type="Texture2D" uid="uid://cujfywn7meuce" path="res://Assets/Crab Enemy Camacebra Games/Moving/CrabMoving2.png" id="3_botcv"]
+[ext_resource type="Texture2D" uid="uid://8nesj8yvm5vm" path="res://Assets/Crab Enemy Camacebra Games/Moving/CrabMoving3.png" id="4_gpp4q"]
+[ext_resource type="Texture2D" uid="uid://cgxmtne3cumsb" path="res://Assets/Crab Enemy Camacebra Games/Moving/CrabMoving4.png" id="5_r400u"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ahrwf"]
+atlas = ExtResource("2_r38ff")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ixsfj"]
+atlas = ExtResource("3_botcv")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vs0fl"]
+atlas = ExtResource("4_gpp4q")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_d7iyo"]
+atlas = ExtResource("5_r400u")
+region = Rect2(0, 0, 20, 20)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_coy6b"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ahrwf")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ixsfj")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vs0fl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_d7iyo")
+}],
+"loop": true,
+"name": &"default",
+"speed": 9.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wuwws"]
+size = Vector2(19, 16)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_yvu3u")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_coy6b")
+autoplay = "default"
+frame = 1
+frame_progress = 0.903389
+
+[node name="Killzone" parent="." instance=ExtResource("3_a0w7v")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0, -2)
+shape = SubResource("RectangleShape2D_wuwws")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(16, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-16, 0)
