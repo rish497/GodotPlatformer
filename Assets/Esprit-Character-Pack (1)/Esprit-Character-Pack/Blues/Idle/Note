@@ -1,0 +1,2 @@
+Idle-0, Idle-1, Idle-2 frames are the same. It is to create the delay between the animation cycle. Prefer using
+a single frame if you can programmatically recreate the delay.

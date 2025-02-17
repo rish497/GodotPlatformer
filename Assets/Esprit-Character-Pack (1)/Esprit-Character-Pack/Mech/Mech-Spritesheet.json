@@ -1,0 +1,181 @@
+{ "frames": {
+   "RobotEnmey 0.aseprite": {
+    "frame": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 1.aseprite": {
+    "frame": { "x": 27, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 2.aseprite": {
+    "frame": { "x": 54, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 125
+   },
+   "RobotEnmey 3.aseprite": {
+    "frame": { "x": 81, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 125
+   },
+   "RobotEnmey 4.aseprite": {
+    "frame": { "x": 108, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 125
+   },
+   "RobotEnmey 5.aseprite": {
+    "frame": { "x": 135, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 125
+   },
+   "RobotEnmey 6.aseprite": {
+    "frame": { "x": 162, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 7.aseprite": {
+    "frame": { "x": 189, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 8.aseprite": {
+    "frame": { "x": 216, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 9.aseprite": {
+    "frame": { "x": 243, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 10.aseprite": {
+    "frame": { "x": 270, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 11.aseprite": {
+    "frame": { "x": 297, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 12.aseprite": {
+    "frame": { "x": 324, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 13.aseprite": {
+    "frame": { "x": 351, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 14.aseprite": {
+    "frame": { "x": 378, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 15.aseprite": {
+    "frame": { "x": 405, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 16.aseprite": {
+    "frame": { "x": 432, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 17.aseprite": {
+    "frame": { "x": 459, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 18.aseprite": {
+    "frame": { "x": 486, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   },
+   "RobotEnmey 19.aseprite": {
+    "frame": { "x": 513, "y": 0, "w": 27, "h": 24 },
+    "rotated": false,
+    "trimmed": false,
+    "spriteSourceSize": { "x": 0, "y": 0, "w": 27, "h": 24 },
+    "sourceSize": { "w": 27, "h": 24 },
+    "duration": 100
+   }
+ },
+ "meta": {
+  "app": "https://github.com/LibreSprite/LibreSprite/",
+  "version": "1.0",
+  "image": "/home/midhil/Documents/Platformer/Mech/Mech-Spritesheet.png",
+  "format": "I8",
+  "size": { "w": 540, "h": 24 },
+  "scale": "1",
+  "frameTags": [
+   { "name": "Idle", "from": 2, "to": 5, "direction": "forward" },
+   { "name": "Walk", "from": 6, "to": 10, "direction": "forward" },
+   { "name": "Hurt", "from": 11, "to": 12, "direction": "forward" },
+   { "name": "Die", "from": 13, "to": 16, "direction": "forward" },
+   { "name": "Attack", "from": 17, "to": 19, "direction": "forward" }
+  ],
+  "layers": [
+   { "name": "Layer 1", "opacity": 255, "blendMode": "normal" }
+  ]
+ }
+}
