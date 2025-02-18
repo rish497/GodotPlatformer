@@ -1,0 +1,49 @@
+[gd_scene load_steps=8 format=3 uid="uid://dl1wn5y02bdc0"]
+
+[ext_resource type="Texture2D" uid="uid://c04kk660oo8cs" path="res://Assets/Esprit-Character-Pack (1)/Esprit-Character-Pack/Dark-Matter/Dark-Matter-Spritesheet.png" id="1_wh7i6"]
+[ext_resource type="PackedScene" uid="uid://dbtucgepmlwmy" path="res://Scenes/killzone.tscn" id="2_3208r"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yeqyl"]
+atlas = ExtResource("1_wh7i6")
+region = Rect2(0, 0, 26, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_1joq0"]
+atlas = ExtResource("1_wh7i6")
+region = Rect2(26, 0, 26, 24)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sa8w"]
+atlas = ExtResource("1_wh7i6")
+region = Rect2(52, 0, 26, 24)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_vqrc2"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yeqyl")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_1joq0")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sa8w")
+}],
+"loop": true,
+"name": &"default",
+"speed": 10.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_ewnwv"]
+radius = 12.2602
+
+[node name="Node2D" type="Node2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_vqrc2")
+autoplay = "default"
+frame_progress = 0.512415
+
+[node name="Killzone" parent="." instance=ExtResource("2_3208r")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0.75, -0.5)
+shape = SubResource("CircleShape2D_ewnwv")

@@ -7,7 +7,7 @@ func _ready() -> void:
 	sprite_2d.visible = false
 
 func _process(delta: float) -> void:
-	if Global.tick >= 3:
+	if Global.tick >= 4:
 		sprite_2d.visible = true  # Show sprite when tick is 2
 	else:
 		sprite_2d.visible = false  # Hide sprite otherwise
