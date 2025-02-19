@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://cbt4ky7k4dbnl"]
+
+[ext_resource type="Script" path="res://scripts/5_scene_counter.gd" id="1_menqs"]
+
+[node name="5sceneCounter" type="Node2D"]
+script = ExtResource("1_menqs")

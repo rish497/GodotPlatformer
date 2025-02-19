@@ -18,6 +18,8 @@ config/icon="res://icon.svg"
 [autoload]
 
 Global="*res://Scenes/Global.tscn"
+Cpart="*res://Scenes/Cpart.tscn"
+counter="*res://Scenes/5_scene_counter.tscn"
 
 [input]
 
