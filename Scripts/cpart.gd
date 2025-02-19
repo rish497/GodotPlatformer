@@ -3,8 +3,8 @@ extends Node2D
 
 func _ready():
 	if Global.cpart == 0:
-		tile_map.visible = false
+		tile_map.visibility_layer = false
 	
 	if Global.cpart == 1:
-		tile_map.visible = true
+		tile_map.visibility_layer = true
 		Global.counter = 1
