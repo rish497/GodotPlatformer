@@ -1,0 +1,78 @@
+[gd_scene load_steps=12 format=3 uid="uid://dmv88bm6e6m8i"]
+
+[ext_resource type="Script" path="res://Scripts/bat.gd" id="1_th7yc"]
+[ext_resource type="Texture2D" uid="uid://bx2s00glwiww0" path="res://Assets/Esprit-Character-Pack (1)/Esprit-Character-Pack/Blues/Blues-Spritesheet.png" id="2_lg4tw"]
+[ext_resource type="PackedScene" uid="uid://dbtucgepmlwmy" path="res://Scenes/killzone.tscn" id="3_2fond"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5a4dr"]
+atlas = ExtResource("2_lg4tw")
+region = Rect2(0, 0, 17, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u3hgq"]
+atlas = ExtResource("2_lg4tw")
+region = Rect2(68, 0, 17, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_liy6x"]
+atlas = ExtResource("2_lg4tw")
+region = Rect2(85, 0, 17, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_q31co"]
+atlas = ExtResource("2_lg4tw")
+region = Rect2(102, 0, 17, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8u3dv"]
+atlas = ExtResource("2_lg4tw")
+region = Rect2(119, 0, 17, 19)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_tl88u"]
+atlas = ExtResource("2_lg4tw")
+region = Rect2(136, 0, 17, 19)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_7i3ts"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5a4dr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u3hgq")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_liy6x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_q31co")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8u3dv")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_tl88u")
+}],
+"loop": true,
+"name": &"default",
+"speed": 11.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wuwws"]
+size = Vector2(17, 19)
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_th7yc")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_7i3ts")
+autoplay = "default"
+frame_progress = 0.46907
+
+[node name="Killzone" parent="." instance=ExtResource("3_2fond")]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Killzone"]
+position = Vector2(0.75, -0.5)
+shape = SubResource("RectangleShape2D_wuwws")
+
+[node name="RayCastRight" type="RayCast2D" parent="."]
+target_position = Vector2(19, 0)
+
+[node name="RayCastLeft" type="RayCast2D" parent="."]
+target_position = Vector2(-18, 0)
