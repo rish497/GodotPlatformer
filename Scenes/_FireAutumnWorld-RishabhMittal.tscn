@@ -1,4 +1,4 @@
-[gd_scene load_steps=34 format=3 uid="uid://4cucm03ypk6l"]
+[gd_scene load_steps=35 format=3 uid="uid://4cucm03ypk6l"]
 
 [ext_resource type="PackedScene" uid="uid://dbtucgepmlwmy" path="res://Scenes/killzone.tscn" id="1_yjkpu"]
 [ext_resource type="Texture2D" uid="uid://bgujo1lrslm7c" path="res://Assets/sprites/world_tileset.png" id="2_lb571"]
@@ -15,6 +15,7 @@
 [ext_resource type="Script" path="res://Scripts/fireAutumn.gd" id="12_5dydf"]
 [ext_resource type="PackedScene" uid="uid://dvx5hwtbo8ddl" path="res://Scenes/OrangeEnemy.tscn" id="13_fvpre"]
 [ext_resource type="Texture2D" uid="uid://birtevk4t8laj" path="res://Assets/Houses_TILESET_B-C-D-E (1).png" id="13_tdx1p"]
+[ext_resource type="PackedScene" uid="uid://4y0egsvrdhtj" path="res://Scenes/arrows.tscn" id="16_f36wo"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_qp8vg"]
 
@@ -1280,6 +1281,8 @@ position = Vector2(1726, -280)
 
 [node name="Enemy28" parent="Enemies" instance=ExtResource("13_fvpre")]
 position = Vector2(1789, -240)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("16_f36wo")]
 
 [connection signal="body_entered" from="Shop" to="Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop" to="Shop" method="_on_body_exited"]

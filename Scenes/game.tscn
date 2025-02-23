@@ -1,13 +1,14 @@
-[gd_scene load_steps=13 format=3 uid="uid://duo2gkjblmnkf"]
+[gd_scene load_steps=14 format=3 uid="uid://duo2gkjblmnkf"]
 
 [ext_resource type="Texture2D" uid="uid://bgujo1lrslm7c" path="res://Assets/sprites/world_tileset.png" id="1_t14vn"]
 [ext_resource type="PackedScene" uid="uid://bbbm2hsl7kadt" path="res://Scenes/Player.tscn" id="1_vtetr"]
 [ext_resource type="Script" path="res://Scenes/flip.gd" id="2_oh4xe"]
 [ext_resource type="PackedScene" uid="uid://dbtucgepmlwmy" path="res://Scenes/killzone.tscn" id="4_xhfoa"]
+[ext_resource type="PackedScene" uid="uid://4y0egsvrdhtj" path="res://Scenes/arrows.tscn" id="5_ef8vm"]
 [ext_resource type="Texture2D" uid="uid://birtevk4t8laj" path="res://Assets/Houses_TILESET_B-C-D-E (1).png" id="5_w7u5h"]
 [ext_resource type="PackedScene" uid="uid://caw5mdn4vsp01" path="res://Scenes/coin.tscn" id="6_n0na1"]
 
-[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_2oo1h"]
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_vknym"]
 texture = ExtResource("1_t14vn")
 0:0/0 = 0
 0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
@@ -169,7 +170,7 @@ texture = ExtResource("1_t14vn")
 
 [sub_resource type="TileSet" id="TileSet_e5wqi"]
 physics_layer_0/collision_layer = 1
-sources/0 = SubResource("TileSetAtlasSource_2oo1h")
+sources/0 = SubResource("TileSetAtlasSource_vknym")
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1ey1r"]
 atlas = ExtResource("5_w7u5h")
@@ -194,7 +195,7 @@ radius = 25.0
 [node name="Game" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="."]
-position = Vector2(-6, -6)
+position = Vector2(0, -3)
 tile_set = SubResource("TileSet_e5wqi")
 format = 2
 layer_0/name = "Background"
@@ -269,6 +270,8 @@ position = Vector2(562, -32)
 
 [node name="Coin12" parent="Coins" instance=ExtResource("6_n0na1")]
 position = Vector2(650, -15)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("5_ef8vm")]
 
 [connection signal="body_entered" from="Shop" to="Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop" to="Shop" method="_on_body_exited"]

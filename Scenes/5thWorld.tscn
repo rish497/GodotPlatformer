@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dnxxd3wf3cd65"]
+[gd_scene load_steps=32 format=3 uid="uid://dnxxd3wf3cd65"]
 
 [ext_resource type="Texture2D" uid="uid://bgujo1lrslm7c" path="res://Assets/sprites/world_tileset.png" id="1_agttf"]
 [ext_resource type="Texture2D" uid="uid://b5djfihpmuaai" path="res://Assets/Enjl-Dark Halls Tileset/Enjl-Dark Halls Tileset/preview.png" id="2_hvcxi"]
@@ -16,6 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://otkr5rvn65dt" path="res://Scenes/mech.tscn" id="14_n5rtp"]
 [ext_resource type="PackedScene" uid="uid://c3fhljtfubgk5" path="res://Scenes/Cpart1.tscn" id="15_hhfr3"]
 [ext_resource type="PackedScene" uid="uid://dmv88bm6e6m8i" path="res://Scenes/Blue.tscn" id="16_rbrjd"]
+[ext_resource type="PackedScene" uid="uid://4y0egsvrdhtj" path="res://Scenes/arrows.tscn" id="17_cdb2q"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_b1coc"]
 tile_data = PackedInt32Array(0, 720905, 6, 65536, 720905, 7, 131072, 720905, 8, 327680, 720905, 6, 393216, 720905, 7, 458752, 720905, 8)
@@ -3982,3 +3983,5 @@ position = Vector2(-524, -830)
 
 [node name="blue4" parent="Node" instance=ExtResource("16_rbrjd")]
 position = Vector2(-346, -830)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("17_cdb2q")]

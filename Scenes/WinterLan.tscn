@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=3 uid="uid://hdncgay8hem4"]
+[gd_scene load_steps=28 format=3 uid="uid://hdncgay8hem4"]
 
 [ext_resource type="Texture2D" uid="uid://cksomla33f5oo" path="res://Assets/Seasonal Tilesets/4 - Winter World/Terrain (16 x 16).png" id="1_tmrjw"]
 [ext_resource type="PackedScene" uid="uid://dbtucgepmlwmy" path="res://Scenes/killzone.tscn" id="2_2wtf1"]
@@ -12,6 +12,7 @@
 [ext_resource type="Texture2D" uid="uid://bpfkxjpi4m8i6" path="res://Assets/Seasonal Tilesets/4 - Winter World/Background parts/2 - Smaller_mountains.png" id="7_b1h6d"]
 [ext_resource type="Texture2D" uid="uid://birtevk4t8laj" path="res://Assets/Houses_TILESET_B-C-D-E (1).png" id="7_daf3q"]
 [ext_resource type="Texture2D" uid="uid://bf42jhmrc7iig" path="res://Assets/Seasonal Tilesets/4 - Winter World/Background parts/3 - Big_mountain_BG.png" id="8_vcld1"]
+[ext_resource type="PackedScene" uid="uid://4y0egsvrdhtj" path="res://Scenes/arrows.tscn" id="13_gq60j"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ij7u8"]
 
@@ -1021,6 +1022,8 @@ position = Vector2(1484, -591)
 
 [node name="SnowWolf4" parent="." instance=ExtResource("5_7ci1t")]
 position = Vector2(1560, -591)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("13_gq60j")]
 
 [connection signal="body_entered" from="Shop" to="Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop" to="Shop" method="_on_body_exited"]

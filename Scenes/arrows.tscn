@@ -1,0 +1,37 @@
+[gd_scene load_steps=7 format=3 uid="uid://4y0egsvrdhtj"]
+
+[ext_resource type="Texture2D" uid="uid://bpa0iy7yi1r8d" path="res://Assets/Pixel UI pack 2/uparrow.png" id="1_8pr0t"]
+[ext_resource type="Texture2D" uid="uid://g76rb5o0wmsv" path="res://Assets/Pixel UI pack 2/sidearrowleft.png" id="2_iph6g"]
+[ext_resource type="Texture2D" uid="uid://dxm2rsat724ox" path="res://Assets/Pixel UI pack 2/side arrowright.png" id="3_1uuxe"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7ms1"]
+size = Vector2(25, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2lr28"]
+size = Vector2(25, 25)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ftdtd"]
+size = Vector2(25, 25)
+
+[node name="CanvasLayer" type="CanvasLayer"]
+
+[node name="Uparrow" type="TouchScreenButton" parent="."]
+position = Vector2(371, 111)
+scale = Vector2(3.44, 3.44)
+texture_normal = ExtResource("1_8pr0t")
+shape = SubResource("RectangleShape2D_t7ms1")
+action = "ui_accept"
+
+[node name="leftarrow" type="TouchScreenButton" parent="."]
+position = Vector2(-547, 114)
+scale = Vector2(3.44, 3.44)
+texture_normal = ExtResource("2_iph6g")
+shape = SubResource("RectangleShape2D_2lr28")
+action = "ui_left"
+
+[node name="right arrow" type="TouchScreenButton" parent="."]
+position = Vector2(-394, 111)
+scale = Vector2(3.44, 3.44)
+texture_normal = ExtResource("3_1uuxe")
+shape = SubResource("RectangleShape2D_ftdtd")
+action = "ui_right"

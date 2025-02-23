@@ -1,4 +1,4 @@
-[gd_scene load_steps=31 format=3 uid="uid://dddcjd7yi2gtu"]
+[gd_scene load_steps=32 format=3 uid="uid://dddcjd7yi2gtu"]
 
 [ext_resource type="Texture2D" uid="uid://bgujo1lrslm7c" path="res://Assets/sprites/world_tileset.png" id="1_imytx"]
 [ext_resource type="Texture2D" uid="uid://dpdyotx7og6hb" path="res://Assets/Seasonal Tilesets/3 - Tropics/Terrain (16 x 16).png" id="2_vs6ax"]
@@ -14,6 +14,7 @@
 [ext_resource type="PackedScene" uid="uid://c72uk3cv4lj78" path="res://Scenes/crab.tscn" id="12_pt0j1"]
 [ext_resource type="Script" path="res://Scripts/shopTick5.gd" id="13_o5ys4"]
 [ext_resource type="Texture2D" uid="uid://birtevk4t8laj" path="res://Assets/Houses_TILESET_B-C-D-E (1).png" id="14_ijtmo"]
+[ext_resource type="PackedScene" uid="uid://4y0egsvrdhtj" path="res://Scenes/arrows.tscn" id="15_v74p0"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_j803u"]
 tile_data = PackedInt32Array(0, 589825, 3, 1, 786433, 3, 2, 851969, 3)
@@ -1139,6 +1140,8 @@ sprite_frames = SubResource("SpriteFrames_jh6qe")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Shop"]
 position = Vector2(704, -20)
 shape = SubResource("CircleShape2D_3uf8l")
+
+[node name="CanvasLayer" parent="." instance=ExtResource("15_v74p0")]
 
 [connection signal="body_entered" from="Shop" to="Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop" to="Shop" method="_on_body_exited"]

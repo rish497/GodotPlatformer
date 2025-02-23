@@ -1,4 +1,4 @@
-[gd_scene load_steps=27 format=4 uid="uid://cvaadvmycloab"]
+[gd_scene load_steps=28 format=4 uid="uid://cvaadvmycloab"]
 
 [ext_resource type="Texture2D" uid="uid://bgujo1lrslm7c" path="res://Assets/sprites/world_tileset.png" id="1_hxpjd"]
 [ext_resource type="Texture2D" uid="uid://bwahpabljpil2" path="res://Assets/free-swamp-game-tileset-pixel-art/1 Tiles/Tileset.png" id="2_nvdxa"]
@@ -12,6 +12,7 @@
 [ext_resource type="PackedScene" uid="uid://caw5mdn4vsp01" path="res://Scenes/coin.tscn" id="10_q1mx0"]
 [ext_resource type="Script" path="res://Scripts/shop.gd" id="11_kh7gm"]
 [ext_resource type="Texture2D" uid="uid://birtevk4t8laj" path="res://Assets/Houses_TILESET_B-C-D-E (1).png" id="12_lx4u3"]
+[ext_resource type="PackedScene" uid="uid://4y0egsvrdhtj" path="res://Scenes/arrows.tscn" id="13_5c20l"]
 
 [sub_resource type="TileMapPattern" id="TileMapPattern_l7onm"]
 tile_data = PackedInt32Array(0, 786433, 0, 1, 851969, 0, 2, 917505, 0, 3, 983041, 0, 4, 1114113, 0)
@@ -2516,6 +2517,8 @@ position = Vector2(1056, -515)
 
 [node name="Coin22" parent="Coins" instance=ExtResource("10_q1mx0")]
 position = Vector2(1056, -546)
+
+[node name="CanvasLayer" parent="." instance=ExtResource("13_5c20l")]
 
 [connection signal="body_entered" from="Shop" to="Shop" method="_on_body_entered"]
 [connection signal="body_exited" from="Shop" to="Shop" method="_on_body_exited"]
