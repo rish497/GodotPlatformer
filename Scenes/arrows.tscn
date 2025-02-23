@@ -4,34 +4,61 @@
 [ext_resource type="Texture2D" uid="uid://g76rb5o0wmsv" path="res://Assets/Pixel UI pack 2/sidearrowleft.png" id="2_iph6g"]
 [ext_resource type="Texture2D" uid="uid://dxm2rsat724ox" path="res://Assets/Pixel UI pack 2/side arrowright.png" id="3_1uuxe"]
 
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7ms1"]
-size = Vector2(25, 25)
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2lr28"]
 size = Vector2(25, 25)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ftdtd"]
 size = Vector2(25, 25)
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_t7ms1"]
+size = Vector2(25, 25)
+
 [node name="CanvasLayer" type="CanvasLayer"]
 
-[node name="Uparrow" type="TouchScreenButton" parent="."]
-position = Vector2(371, 111)
-scale = Vector2(3.44, 3.44)
-texture_normal = ExtResource("1_8pr0t")
-shape = SubResource("RectangleShape2D_t7ms1")
-action = "ui_accept"
+[node name="ButtonCOntainer" type="HBoxContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = -47.0
+offset_top = -669.0
+offset_right = -47.0
+offset_bottom = -669.0
+grow_vertical = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 10
 
-[node name="leftarrow" type="TouchScreenButton" parent="."]
+[node name="leftarrow" type="TouchScreenButton" parent="ButtonCOntainer"]
 position = Vector2(-547, 114)
 scale = Vector2(3.44, 3.44)
 texture_normal = ExtResource("2_iph6g")
 shape = SubResource("RectangleShape2D_2lr28")
 action = "ui_left"
 
-[node name="right arrow" type="TouchScreenButton" parent="."]
+[node name="right arrow" type="TouchScreenButton" parent="ButtonCOntainer"]
 position = Vector2(-394, 111)
 scale = Vector2(3.44, 3.44)
 texture_normal = ExtResource("3_1uuxe")
 shape = SubResource("RectangleShape2D_ftdtd")
 action = "ui_right"
+
+[node name="ButtonCOntainer2" type="HBoxContainer" parent="."]
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -1182.0
+offset_top = -668.0
+offset_right = -1182.0
+offset_bottom = -668.0
+grow_horizontal = 0
+grow_vertical = 0
+size_flags_vertical = 4
+theme_override_constants/separation = 10
+
+[node name="Uparrow" type="TouchScreenButton" parent="ButtonCOntainer2"]
+position = Vector2(371, 111)
+scale = Vector2(3.44, 3.44)
+texture_normal = ExtResource("1_8pr0t")
+shape = SubResource("RectangleShape2D_t7ms1")
+action = "ui_accept"
