@@ -16,13 +16,14 @@ size = Vector2(25, 25)
 [node name="CanvasLayer" type="CanvasLayer"]
 
 [node name="ButtonCOntainer" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(25, 25)
 anchors_preset = 2
 anchor_top = 1.0
 anchor_bottom = 1.0
-offset_left = -47.0
-offset_top = -669.0
-offset_right = -47.0
-offset_bottom = -669.0
+offset_left = -52.0
+offset_top = -677.0
+offset_right = -27.0
+offset_bottom = -652.0
 grow_vertical = 0
 size_flags_vertical = 4
 theme_override_constants/separation = 10
@@ -42,15 +43,16 @@ shape = SubResource("RectangleShape2D_ftdtd")
 action = "ui_right"
 
 [node name="ButtonCOntainer2" type="HBoxContainer" parent="."]
+custom_minimum_size = Vector2(25, 25)
 anchors_preset = 3
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -1182.0
-offset_top = -668.0
-offset_right = -1182.0
-offset_bottom = -668.0
+offset_left = -1158.0
+offset_top = -673.0
+offset_right = -1133.0
+offset_bottom = -648.0
 grow_horizontal = 0
 grow_vertical = 0
 size_flags_vertical = 4

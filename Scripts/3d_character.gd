@@ -17,18 +17,24 @@ func _physics_process(delta: float) -> void:
 		animated_sprite_2d.flip_h = false
 		velocity.x += 1.0
 		animated_sprite_2d.play("run")
+
+		
 	if Input.is_action_pressed("ui_left"):
 		velocity.x -= 1.0
 		animated_sprite_2d.flip_h = true
-		animated_sprite_2d.play("new_animation")
+		animated_sprite_2d.play("run")
+
+		
 	if Input.is_action_pressed("ui_down"):
 		animated_sprite_2d.flip_h = false
 		velocity.y += 1.0
-		animated_sprite_2d.play("idle")
+		animated_sprite_2d.play("down")
+
+		
 	if Input.is_action_pressed("ui_up"):
 		animated_sprite_2d.flip_h = false
 		velocity.y -= 1.0
-		animated_sprite_2d.play("idle")
+		animated_sprite_2d.play("up")
 
 
 	# Normalize and apply speed
