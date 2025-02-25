@@ -6,16 +6,16 @@
 [ext_resource type="Texture2D" uid="uid://dxm2rsat724ox" path="res://Assets/Pixel UI pack 2/side arrowright.png" id="4_qoirn"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2lr28"]
-size = Vector2(25, 25)
+size = Vector2(30, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ftdtd"]
-size = Vector2(25, 25)
+size = Vector2(30, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_t7ms1"]
-size = Vector2(25, 25)
+size = Vector2(30, 30)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xehuj"]
-size = Vector2(25, 25)
+size = Vector2(30, 30)
 
 [node name="CanvasLayer" type="CanvasLayer"]
 
