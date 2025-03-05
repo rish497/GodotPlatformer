@@ -15,6 +15,6 @@ func _process(delta: float) -> void:
 		
 func _on_body_entered(body: PhysicsBody2D):
 	if Global.tick >= 4:
-		print("Autumn World")
+		print("BeachWorld")
 		entered = true
-		get_tree().change_scene_to_file("res://Scenes/_FireAutumnWorld-RishabhMittal.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Beach World.tscn")
